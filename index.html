@@ -4,55 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>landing-page</title>
 </head>
+
 <body>
-    <div class="header">
-        <p>Header Logo</p>
-        <p>Header link one</p>
-        <p>Header link two</p>
-        <p>Header link three</p>
-    </div>
 
-    <div class="hero">
-        <p>This website is awesome</p>
-        <p>This wesite has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-        <button>Sign up</button>
-        <img src="imgs/pexels-mathias-reding-14806275.jpg">
+    <header>
+        <div class="nav">
+            <div class="header-left">
+                <p>Header Logo</p>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><a href="#">header link one</a></li>
+                    <li><a href="#">header link two</a></li>
+                    <li><a href="#">header link three</a></li>
+                </ul>
+            </div>
         </div>
 
-    <div class="container-one">
-        <div class="some-random-info">
-            <p>Some random information.</p>
+        <div class="welcome">
+            <div class="left">
+                <h1 class="hero">This website is awesome</h1>
+                <p class="secondary">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                <button class="secondary">Sign up</button>
+            </div>
+            <div class="right">  
+                <div class="img">
+                    <p class="subtext">This is a placeholder for an image</p>
+                </div>
+            </div>
         </div>
+    </header>
+
+    <div class="main">
+        <h2>Some random information.</h2>
         <div class="squares">
-            <div class="one">
-                <img src="imgs/pexels-armağan-başaran-9969430.jpg">
-                <p>this is some subtext under an illustration or image</p>
+                <div class="card">
+                    <div class="square"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <div class="square"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <div class="square"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <div class="square"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
             </div>
-            <div class="two">
-                <img src="imgs/pexels-jc-siller-9712732.jpg">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-            <div class="two">
-                <img src="imgs/pexels-max-rahubovskiy-6312359.jpg">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-            <div class="two">
-                <img src="imgs/pexels-michael-kanivetsky-9969370.jpg">
-                <p>this is some subtext under an illustration or image</p>
-            </div>
-        </div>
     </div>
 
-    <div class="container-two">
-        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, ormaybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+    <div class="quote">
+        <em>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, ormaybe people will actually read it. Who knows? All I know is that it looks nice.</em>
+        <p>Thor, God of Thunder</p>
     </div>
 
     <div class="call-action">
-        <p>Call to action! It's time!</p>
-        <p>Sign up for our product by clicking that button right over there!</p>
-        <button>Sign up</button>
+        <div class="box"> 
+            <div class="left">
+                <strong>Call to action! It's time!</strong>
+                <p class="secondary">Sign up for our product by clicking that button right over there!</p>
+            </div>
+            <button class="secondary">Sign up</button>
+        </div>
     </div>
+
+    <footer>
+        Copyright &copy; The Odin Project 2021
+    </footer>
+
 </body>
 </html>
